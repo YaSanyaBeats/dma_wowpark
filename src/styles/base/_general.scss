@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgb(0, 117, 105), rgb(117, 172, 21));
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.container {
+    margin: auto;
+    padding: 0 15px;
+    max-width: 1430px;
+}
