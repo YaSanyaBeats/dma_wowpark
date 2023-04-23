@@ -1,10 +1,12 @@
 .promo {
-    background: #FCD700;
+    background-image: url(../img/background_pr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container.promo-section {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
 }
 
 .container.promo-section h2 {
@@ -15,7 +17,7 @@
 }
 
 .promo-cards_column {
-    height: 750px;
+    height: auto;
     border-radius: 40px;
     background-image: url(../img/promo1.jpg);
     background-size: cover;
@@ -49,6 +51,50 @@
     background-repeat: no-repeat;
     border-radius: 40px;
     background-position-x: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.promo-card_second {
+    background-image: url(../img/promo3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    background-position-x: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.promo-card_third {
+    background-image: url(../img/promo4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    background-position-x: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.promo-card_fourth {
+    background-image: url(../img/promo5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    background-position-x: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.promo-card_cont{
+    padding: 40px;
+}
+
+.secondline-cards {
+    padding-top: 20px;
 }
 
 .container {

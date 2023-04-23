@@ -1,0 +1,147 @@
+.tabs {
+	display: flex;
+	flex-wrap: wrap; // make sure it wraps
+    justify-content: center;
+    padding-top: 80px;
+    position: relative;
+}
+
+.tb-blue {
+    position: absolute;
+    top: 43%;
+    left: -8%;
+    z-index: 9;
+}
+
+.tb-yellow {
+    position: absolute;
+    bottom: -13%;
+    left: 18%;
+    z-index: 9;
+}
+
+.tb-green {
+    position: absolute;
+    top: 52%;
+    right: -3%;
+    z-index: 9;
+}
+
+.useful h2 {
+    color: $black;
+    font-size: 64px;
+}
+
+.tabs label {
+	order: 1; // Put the labels first
+	display: block;
+	padding: 1rem 2rem;
+	cursor: pointer;
+  background: #90CAF9;
+  font-weight: bold;
+  transition: background ease 0.2s;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 120%;
+	color: white;
+	width: 25%;
+}
+.tabs .tab {
+  order: 99; // Put the tabs last
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  background: #fff;
+	padding: 35px;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: #fff;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+.card-content {
+	padding: 40px 30px;
+}
+
+.frst-tb {
+	background: #F6611A!important;
+    border-radius: 0px 0px 40px 40px;
+}
+
+.scnd-tb {
+	background: #4D7CC1!important;
+	border-radius: 0px 0px 40px 40px;
+}
+
+.thrd-tb {
+	background: #FCD700!important;
+	border-radius: 0px 0px 40px 40px;
+}
+
+.fur-tb {
+	background: #7FD1B9!important;
+	border-radius: 0px 0px 40px 40px;
+}
+
+.frst-lb {
+	background: #F6611A!important;
+	border-radius: 40px 40px 0px 0px;
+}
+
+.scnd-lb {
+	background: #4D7CC1!important;
+	border-radius: 40px 40px 0px 0px;
+}
+
+.thrd-lb {
+	background: #FCD700!important;
+	border-radius: 40px 40px 0px 0px;
+}
+
+.fur-lb {
+	background: #7FD1B9!important;
+	border-radius: 40px 40px 0px 0px;
+}
+
+.card-display {
+	display: flex;
+}
+
+.card-img, .card-content{
+    width: 50%;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.card-content h3 {
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 80px;
+}
+
+.card-content p {
+    padding-bottom: 30px;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
