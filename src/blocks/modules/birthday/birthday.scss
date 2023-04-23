@@ -1,0 +1,86 @@
+.birthday {
+    background: #7FD1B9;
+    margin-top: 120px;
+    background-image: url(../img/happybday-bg.png);
+}
+
+.section.happybday {
+    display: flex;
+    padding: 100px 0px 70px 200px;
+}
+
+.happybday_column-second {
+    width: 40%;
+    position: relative;
+}
+
+.happybday_column-first {
+    width: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.happybday_column-second {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.birthday-bobi {
+    position: relative;
+    left: 71px;
+}
+
+.happybday_column-first h2 {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+}
+
+
+.form-zvonok_second input, .form-zvonok input {
+    border-bottom: 4px solid white;
+}
+
+.form-zvonok input {
+    padding: 20px 15px;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 4px solid white;
+    transition: 1s;
+    outline:none;
+}
+
+.form-zvonok {
+    width: 100%;
+    display: flex;
+    gap: 35px;
+    flex-direction: row;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.bot-send-mail {
+    padding: 28px 55px;
+    margin-top: 55px;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 44px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43.2px;
+    font-family: var(--main-font-family);
+    text-transform: none;
+}

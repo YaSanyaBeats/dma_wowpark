@@ -1,3 +1,25 @@
 <section class="birthday">
     <!--TODO Section birthday-->
+    <div class="section happybday">
+        <div class="happybday_column-first">
+            <h2>День рождения у вас?<br> Скидка с нас!</h2>
+            <p class="header__text">чуть-чуть расскажите нам о себе, а мы подготовим<br> спецпредложение в ваш праздник, а ещё на 5 дней<br> до и после него</p>
+            <form class="hochy-sckiky" autocomplete="off" action="mail.php" method="post">
+                <div class="form-zvonok"> 
+                  <div>
+                    <input maxlength="35" class="in-put" placeholder="NAME" type="text" name="username" required="">
+                  </div>
+                  <div>
+                    <input maxlength="35" class="in-put" placeholder="NAME" type="text" name="usernameme" required="">
+                  </div>
+                </div>
+                <input class="bot-send-mail" type="submit" value="Клик-клик, хочу скидку!">
+            </form>
+        </div>
+        <div class="happybday_column-second">
+            <div class="birthday-bobi">
+                @@include('../../../img/anim-vectors/birthday-bobi.svg')
+            </div>    
+        </div>
+    </div>
 </section>
