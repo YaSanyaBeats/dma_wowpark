@@ -1,0 +1,65 @@
+.tickets {
+    margin-top: 100px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+    }
+    &__left {
+        flex: 0 0 700px;
+    }
+    &__title {
+        font-size: 64px;
+        color: $black;
+    }
+    &__text {
+        font-size: 24px;
+        color: $black;
+        line-height: 40px;
+
+        display: block;
+        margin-top: 40px;
+    }
+    &__button-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 40px;
+    }
+    &__button {}
+    &__or {
+        color: $black;
+        font-size: 36px;
+        font-weight: bold;
+    }
+    &__icon {
+        transform: translateY(35px);
+        transition: .3s;
+
+        &:hover {
+            @media (hover: hover) {
+                transform: translateY(35px) rotate(-7deg);
+            }
+        }
+    }
+    &__right {}
+    &__ticket {
+        transform: translate(0, 0);
+        transition: .3s;
+        &:not(.tickets__ticket_first) {
+            margin-top: -100px;
+        }
+
+        &:hover {
+            @media (hover: hover) {
+                transform: translate(-20px, -30px) rotate(-4deg);
+            }
+        }
+    }
+}
+.container {
+}
+.button {
+}

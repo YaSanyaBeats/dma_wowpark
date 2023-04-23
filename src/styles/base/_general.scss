@@ -58,6 +58,11 @@ footer {
     cursor: pointer;
 }
 
+.button_accent {
+    background-color: $orange;
+    color: $white;
+}
+
 .button:hover {
     @media (hover: hover) {
         transform: scale(1.1);
