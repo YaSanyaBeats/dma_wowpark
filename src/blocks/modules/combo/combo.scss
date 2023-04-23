@@ -1,0 +1,63 @@
+.combo {
+    background-color: $orange;
+
+    padding: 100px 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 700px;
+
+        position: relative;
+
+        & svg {
+            width: 300px;
+
+            position: absolute;
+            bottom: -150px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: .3s;
+
+            &:hover {
+                @media (hover: hover) {
+                    transform: translate(-50%, -20px) rotate(5deg);
+                }
+            }
+        }
+    }
+    &__ticket {
+        border-radius: 40px;
+        width: 100%;
+
+        transition: .3s;
+
+        &:hover {
+            @media (hover: hover) {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__right {}
+    &__title {
+        font-size: 64px;
+    }
+    &__text {
+        font-size: 24px;
+
+        display: block;
+        margin-top: 35px;
+    }
+    &__button {
+        margin-top: 35px;
+    }
+}
+.container {
+}
+.button {
+}
