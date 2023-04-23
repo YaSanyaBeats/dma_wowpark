@@ -77,3 +77,13 @@ footer {
     height: 55px;
     margin-left: 25px;
 }
+
+.hidden {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+.visible {
+    opacity: 1 !important;
+    pointer-events: all !important;
+}

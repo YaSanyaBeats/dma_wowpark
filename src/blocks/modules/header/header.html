@@ -46,26 +46,38 @@
         <div class="header__middle">
             <h1 class="header__title">Возбуждающий любопытство</h1>
             <span class="header__subtitle">Узнайте больше об окружающем мире</span>
-            <span class="header__text">Have a spectacular, intriguing and fun experience with WOW PARK! Opening Soon!</span>
+            <span class="header__text">Получите захватывающий, интригующий и веселый опыт с WOW PARK! Скоро открытие!</span>
             <div class="header__button-wrapper">
                 <a class="button header__button" href="#">
-                    <span class="button__text">Book a ticket</span>    
+                    <span class="button__text">Заказать билет</span>    
                     <div class="button__separator"></div>
                     <img src="img/icons/ticket-white.svg" class="button__icon">
+
+                    <div class="header__label">
+                        <span class="header__label-text">Buy online<br>-10% off</span>
+                    </div>
                 </a>
-                <div class="header__label">
-                    <span class="header__label-text">Buy online -10% off</span>
-                </div>
+                
             </div>
         </div>
         <div class="header__bottom">
             <div class="header__social">
-                <span class="header__cosial-text">Follow us →</span>
-                @@include('../../../img/icons/social-facebook.svg')
-                @@include('../../../img/icons/social-instagram.svg')
-                @@include('../../../img/icons/social-tictok.svg')
-                @@include('../../../img/icons/social-line.svg')
-                @@include('../../../img/icons/social-youtube.svg')
+                <span class="header__social-text">Follow us →</span>
+                <a href="#" class="header__social-link">
+                    @@include('../../../img/icons/social-facebook.svg')
+                </a>
+                <a href="#" class="header__social-link">
+                    @@include('../../../img/icons/social-instagram.svg')
+                </a>
+                <a href="#" class="header__social-link">
+                    @@include('../../../img/icons/social-tictok.svg')
+                </a>
+                <a href="#" class="header__social-link">
+                    @@include('../../../img/icons/social-line.svg')
+                </a>
+                <a href="#" class="header__social-link">
+                    @@include('../../../img/icons/social-youtube.svg')
+                </a>
             </div>
             <div class="header__open-video-wrapper">
                 <img src="img/icons/mute.svg" class="header__open-video-icon">
@@ -80,18 +92,18 @@
         <video src="files/header-bg.mp4" autoplay muted loop playsinline class="header__video"></video>
         @@include('../../../img/icons/close.svg')
     </div>
-    <div class="header__red-worm">
+    <div class="header__worm header_red-worm">
         @@include('../../../img/anim-vectors/red-hero.svg')
     </div>
-    <div class="header__yellow-worm">
+    <div class="header__worm header_yellow-worm">
         @@include('../../../img/anim-vectors/yellow-hero.svg')
     </div>
-    <div class="header__blue-worm">
+    <div class="header__worm header_blue-worm">
         @@include('../../../img/anim-vectors/blue-hero.svg')
     </div>
-    <div class="header__bobi">
+    <a href="#" class="header__bobi">
         @@include('../../../img/anim-vectors/hero-bobi.svg')
-    </div>
+    </a>
 
    
 </header>
