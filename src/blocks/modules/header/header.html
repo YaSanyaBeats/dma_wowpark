@@ -1,5 +1,95 @@
 <header class="header">
-    <div class="container">
-        <h2>Header</h2>
+    <div class="container header__container">
+        <div class="header__top">
+            <div class="header__logo">
+                <a href="/" class="header__logo-link">
+                    @@include('../../../img/icons/logo.svg')
+                </a>
+            </div>
+            <div class="header__menu-wrapper">
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-elem">
+                            <a href="#" class="header__menu-link">О парке</a>
+                        </li>
+                        <li class="header__menu-elem">
+                            <a href="#" class="header__menu-link">Программа</a>
+                        </li>
+                        <li class="header__menu-elem">
+                            <a href="#" class="header__menu-link">Акции</a>
+                        </li>
+                        <li class="header__menu-elem">
+                            <a href="#" class="header__menu-link">Полезно</a>
+                        </li>
+                        <li class="header__menu-elem">
+                            <a href="#" class="header__menu-link">Билеты</a>
+                        </li>
+                        <li class="header__menu-elem">
+                            <a href="#" class="header__menu-link">Экскурсии</a>
+                        </li>
+                        <li class="header__menu-elem">
+                            <a href="#" class="header__menu-link">Отзывы</a>
+                        </li>
+                        <li class="header__menu-elem">
+                            <a href="#" class="header__menu-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__burger"></div>
+                <div class="header__language">
+                    <span class="header__language-elem header__language-elem_active">RUS</span>
+                    <a href="#" class="header__language-elem">EN</a>
+                    <a href="#" class="header__language-elem">THA</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__middle">
+            <h1 class="header__title">Возбуждающий любопытство</h1>
+            <span class="header__subtitle">Узнайте больше об окружающем мире</span>
+            <span class="header__text">Have a spectacular, intriguing and fun experience with WOW PARK! Opening Soon!</span>
+            <div class="header__button-wrapper">
+                <button class="button header__button">
+                    <span class="button__text">Book a ticket</span>    
+                    <div class="button__separator"></div>
+                    <img src="img/icons/ticket-white.svg" class="button__icon">
+                </button>
+                <div class="header__label">
+                    <span class="header__label-text">Buy online -10% off</span>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="header__social">
+                <span class="header__cosial-text">Follow us →</span>
+                @@include('../../../img/icons/social-facebook.svg')
+                @@include('../../../img/icons/social-instagram.svg')
+                @@include('../../../img/icons/social-tictok.svg')
+                @@include('../../../img/icons/social-line.svg')
+                @@include('../../../img/icons/social-youtube.svg')
+            </div>
+            <div class="header__open-video-wrapper">
+                <img src="img/icons/mute.svg" class="header__open-video-icon">
+                <div class="header__open-video-text-wrapper">
+                    <span class="header__open-video-text">Watch video</span>
+                    <span class="header__open-video-text">with sound</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__video-wrapper">
+        <video src="files/header-bg.mp4" autoplay muted loop playsinline class="header__video"></video>
+        @@include('../../../img/icons/close.svg')
+    </div>
+    <div class="header__red-worm">
+        @@include('../../../img/anim-vectors/red-hero.svg')
+    </div>
+    <div class="header__yellow-worm">
+        @@include('../../../img/anim-vectors/yellow-hero.svg')
+    </div>
+    <div class="header__blue-worm">
+        @@include('../../../img/anim-vectors/blue-hero.svg')
+    </div>
+    <div class="header__bobi">
+        @@include('../../../img/anim-vectors/hero-bobi.svg')
     </div>
 </header>
