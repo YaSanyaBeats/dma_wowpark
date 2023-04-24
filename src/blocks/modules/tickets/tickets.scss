@@ -59,7 +59,82 @@
         }
     }
 }
-.container {
+
+@media screen and (max-width: $tablet) {
+    .tickets {
+		&__container {
+            gap: 40px;
+        }
+		&__left {
+            flex: 0 0 450px;
+        }
+		&__title {
+            font-size: 40px;
+        }
+		&__text {
+            font-size: 18px;
+            line-height: 22px;
+        }
+		&__button-wrapper {}
+		&__button {
+            font-size: 26px;
+        }
+		&__or {
+            font-size: 18px;
+        }
+		&__icon {}
+		&__right {}
+		&__ticket {
+            width: 100%;
+            &:not(.tickets__ticket_first) {
+                margin-top: -10vw;
+            }
+            
+			&_first {}
+		}
+    }
 }
-.button {
+
+@media screen and (max-width: $mobile) {
+    .tickets {
+        margin-top: 40px;
+		&__container {
+            flex-direction: column-reverse;
+        }
+		&__left {
+            flex: 1 1 auto;
+        }
+		&__title {
+            font-size: 24px;
+            text-align: center;
+        }
+		&__text {
+            text-align: center;
+
+            margin-top: 10px;
+        }
+		&__button-wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+		&__button {
+            font-size: 22px;
+
+            flex: 0 0 100%;
+            padding: 20px;
+        }
+		&__or {}
+		&__icon {
+            width: 20px;
+            height: 20px;
+            transform: translate(7px, 7px);
+        }
+		&__right {
+            padding: 0 30px;
+        }
+		&__ticket {
+			&_first {}
+		}
+    }
 }
