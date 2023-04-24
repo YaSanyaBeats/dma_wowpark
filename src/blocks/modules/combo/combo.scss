@@ -62,3 +62,60 @@
 }
 .button {
 }
+
+
+@media screen and (max-width: $tablet) {
+    .combo {
+        margin-top: 40px;
+        padding: 50px 0;
+		&__container {
+            gap: 40px;
+        }
+		&__left {
+            flex: 0 0 300px;
+
+            & svg {
+                width: 150px;
+            }
+        }
+		&__ticket {}
+		&__right {}
+		&__title {
+            font-size: 32px;
+        }
+		&__text {
+            font-size: 18px;
+        }
+		&__button {
+            font-size: 24px;
+        }
+    }
+} 
+
+@media screen and (max-width: $mobile) {
+    .combo {
+		&__container {
+            flex-direction: column-reverse;
+        }
+		&__left {
+            flex: 1 1 auto;
+
+            & svg {
+                bottom: -200px;
+            }
+        }
+		&__ticket {}
+		&__right {}
+		&__title {
+            font-size: 24px;
+        }
+		&__text {
+            font-size: 18px;
+        }
+		&__button {
+            font-size: 22px;
+            padding: 20px;
+            width: 100%;
+        }
+    }
+}
