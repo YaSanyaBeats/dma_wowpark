@@ -141,3 +141,9 @@ footer {
 .fix-font-G {
     margin-right: -20px;
 }
+
+@media screen and (max-width: $tablet) {
+    .fix-font-G {
+        margin-top: -12px;
+    }
+}

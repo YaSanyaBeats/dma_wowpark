@@ -71,5 +71,69 @@
     }
     &__arrow {
         margin-bottom: 40px;
+        & svg:last-child {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .excursion {
+        padding: 40px 0;
+		&__container {}
+		&__card {}
+		&__title {
+            font-size: 32px;
+        }
+		&__text {
+            font-size: 18px;
+			&_last {}
+		}
+		&__timeline {}
+    }
+    .excursion-timeline {
+        &__elem {}
+        &__icon {}
+        &__text {
+            font-size: 18px;
+        }
+        &__arrow {
+            & svg {
+                width: 120px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .excursion {
+		&__container {}
+		&__card {
+            padding: 40px;
+        }
+		&__title {}
+		&__text {
+			&_last {
+                margin-top: 40px;
+            }
+		}
+		&__timeline {}
+    }
+    .excursion-timeline {
+        flex-direction: column;
+
+        margin-top: 40px;
+		&__elem {}
+		&__icon {}
+		&__text {}
+		&__arrow {
+            margin-bottom: 0;
+            & svg:last-child {
+                display: block;
+            }
+            & svg:first-child {
+                display: none;
+            }
+        }
     }
 }
