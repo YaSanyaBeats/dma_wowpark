@@ -1,66 +1,131 @@
+.lines {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    &__worm {
+        width: 100%;
+        height: 180px;
 
-.worm-fisrt, .worm-second, .worm-three {
-    width: 100%;
-    height: 180px;
-    position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-size: contain;
+
+        position: relative;
+
+        &:nth-child(1) {
+            background: url('../img/anim-vectors/yellow-line.svg') no-repeat 50% 50%;
+            padding-left: 200px;
+            &::after {
+                content: '';
+
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+
+                width: 50%;
+                height: 100%;
+
+                background-color: $yellow;
+            }
+        }
+        &:nth-child(2) {
+            background: url('../img/anim-vectors/red-line.svg') no-repeat 50% 50%;
+            padding-right: 200px;
+
+            &::after {
+                content: '';
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                
+                width: 50%;
+                height: 100%;
+
+                background-color: $orange;
+            }
+        }
+        &:nth-child(3) {
+            background: url('../img/anim-vectors/blue-line.svg') no-repeat 50% 50%;
+            padding-left: 200px;
+
+            &::after {
+                content: '';
+
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+                
+                width: 50%;
+                height: 100%;
+
+                background-color: $blue;
+            }
+        }
+    }
+    &__title {
+        font-size: 48px;
+    }
 }
 
-.worm-fisrt h2, .worm-three h2 {
-    width: 100%;
-    position: absolute;
-    z-index: 99;
-    top:50%;
-    left:64%;
-    transform:translate(-50%, -50%);
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 60px;
-    letter-spacing: -0.04em;
+@media screen and (max-width: $tablet) {
+    .lines {
+        margin-top: 40px;
+		&__worm {
+            height: 80px;
+            
+            &:nth-child(1) {
+                background-position-x: 100px;
+                background-size: contain;
+                
+            }
+            &:nth-child(2) {
+                background-position-x: -100px;
+                background-size: contain;
+                
+            }
+            &:nth-child(3) {
+                background-position-x: 100px;
+                background-size: contain;
+
+            }
+		}
+		&__title {
+            font-size: 18px;
+		}
+    }
 }
 
-.worm-second h2 {
-    width: 100%;
-    position: absolute;
-    z-index: 99;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 60px;
-    letter-spacing: -0.04em;
-}
-
-.worm-second svg {
-    position: absolute;
-    right: 0;
-}
-
-@media screen and (max-width: 465px) {
-    .worm-fisrt, .worm-second, .worm-three {
-        height: 80px;
+@media screen and (max-width: $mobile) {
+    .lines {
+		&__worm {
+            &::after {
+                content: none !important;
+            }
+            &:nth-child(1) {
+                padding-left: 100px;
+                background-position: 15px 50%;
+                background-size: cover;
+            }
+            &:nth-child(2) {
+                padding-right: 100px;
+                padding-left: 30px;
+                background-position: calc(100% - 15px) 50%;
+                background-size: cover;
+            }
+            &:nth-child(3) {
+                padding-left: 100px;
+                background-position: 15px 50%;
+                background-size: cover;
+            }
+        }
+		&__title {
+            font-size: 14px;
+        }
     }
-
-    .worm-fisrt svg, .worm-second svg, .worm-three svg {
-        height: 80px;
-    }
-
-    .worm-fisrt svg {
-        left: -116%;
-        position: absolute;
-    }
-
-    .worm-second svg {
-        left: -205%;
-    }
-
-    .worm-three svg {
-        left: -116%;
-        position: absolute;
-    }
-
-    .worm-fisrt h2, .worm-three h2, .worm-second h2 {
-        font-size: 14px;
-        line-height: 18px;
-    }        
 }
