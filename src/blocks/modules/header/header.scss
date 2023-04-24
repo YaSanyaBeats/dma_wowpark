@@ -390,10 +390,22 @@
 
 @media screen and (max-width: $tablet) {
     .header {
-		&_red-worm {}
-		&_yellow-worm {}
-		&_blue-worm {}
-		&__container {}
+		&_red-worm {
+            top: 140px;
+            left: -120px;
+        }
+		&_yellow-worm {
+            left: -40px;
+            bottom: 0;
+        }
+		&_blue-worm {
+            right: -200px;
+            bottom: 65%;
+            transform: scale(0.7);
+        }
+		&__container {
+            padding: 40px;
+        }
 		&__top {
             flex-direction: column-reverse;
             align-items: stretch;
@@ -415,13 +427,101 @@
 		&__burger {
             display: block;
         }
-		&__language {}
+		&__language {
+            position: relative;
+            z-index: 5;
+        }
 		&__language-elem {
 			&_active {}
 		}
 		&__middle {}
-		&__title {}
-		&__subtitle {}
+		&__title {
+            font-size: 36px;
+            text-align: center;
+        }
+		&__subtitle {
+            font-size: 32px;
+            text-align: center;
+        }
+		&__text {
+            display: none;
+        }
+		&__button-wrapper {
+            justify-content: center;
+        }
+		&__button {}
+		&__label {
+            display: none;
+        }
+		&__label-text {}
+		&__bottom {
+            justify-content: flex-end;
+        }
+		&__social {
+            display: none;
+        }
+		&__social-text {}
+		&__social-link {}
+		&__open-video-wrapper {}
+		&__open-video-icon {}
+		&__open-video-text-wrapper {}
+		&__open-video-text {}
+		&__video-wrapper {
+            top: 20px;
+            right: 20px;
+            bottom: 20px;
+            left: 20px;
+
+            & svg {
+                top: 20px;
+                right: 20px;
+
+                width: 40px;
+                height: 40px;
+            }
+        }
+		&__video {}
+		&__worm {}
+		&__bobi {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .header {
+		&_red-worm {}
+		&_yellow-worm {
+            left: -50px;
+            bottom: -60px;
+            transform: scale(0.8);
+        }
+		&_blue-worm {}
+		&__container {}
+		&__top {}
+		&__logo {}
+		&__logo-link {}
+		&__menu-wrapper {}
+		&__menu {}
+		&__menu-list {}
+		&__menu-elem {}
+		&__menu-link {}
+		&__burger {
+            font-size: 22px;
+        }
+		&__language {
+            font-size: 22px;
+        }
+		&__language-elem {
+			&_active {}
+		}
+		&__middle {}
+		&__title {
+            font-size: 22px;
+        }
+		&__subtitle {
+            font-size: 18px;
+        }
 		&__text {}
 		&__button-wrapper {}
 		&__button {}
@@ -435,14 +535,12 @@
 		&__open-video-icon {}
 		&__open-video-text-wrapper {}
 		&__open-video-text {}
-		&__video-wrapper {
-            top: 20px;
-            right: 20px;
-            bottom: 20px;
-            left: 20px;
-        }
+		&__video-wrapper {}
 		&__video {}
-		&__worm {}
+		&__worm {
+            z-index: 1;
+        }
 		&__bobi {}
     }
+
 }

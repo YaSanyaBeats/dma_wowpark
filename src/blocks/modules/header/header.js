@@ -1,25 +1,30 @@
+const isMobile = document.documentElement.clientWidth < 768;
+const isTablet = document.documentElement.clientWidth < 1140;
+
 const worms = document.querySelectorAll('.header__worm');
-console.log(1234);
-if(worms.length > 0) {
-    worms.forEach((worm) => {
-        worm.addEventListener('mouseover', (event) => {
-            worm.classList.add('header__worm_hover');
-        })
 
-        worm.addEventListener('mouseout', (event) => {
-            worm.classList.remove('header__worm_hover');
-        })
-
-        worm.addEventListener('mousedown', (event) => {
-            worm.classList.add('header__worm_mousedown');
-        })
-    })
-
-    document.addEventListener('mouseup', (event) => {
+if(!isTablet) {
+    if(worms.length > 0) {
         worms.forEach((worm) => {
-            worm.classList.remove('header__worm_mousedown');
+            worm.addEventListener('mouseover', (event) => {
+                worm.classList.add('header__worm_hover');
+            })
+
+            worm.addEventListener('mouseout', (event) => {
+                worm.classList.remove('header__worm_hover');
+            })
+
+            worm.addEventListener('mousedown', (event) => {
+                worm.classList.add('header__worm_mousedown');
+            })
         })
-    })
+
+        document.addEventListener('mouseup', (event) => {
+            worms.forEach((worm) => {
+                worm.classList.remove('header__worm_mousedown');
+            })
+        })
+    }
 }
 
 const videoOpenButton = document.querySelector('.header__open-video-wrapper');
