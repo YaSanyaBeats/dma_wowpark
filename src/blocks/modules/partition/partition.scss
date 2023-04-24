@@ -1,5 +1,6 @@
 .partition {
     background-color: $orange;
+    margin-top: 100px;
 }
 
 .cont.partition__section {
@@ -56,4 +57,11 @@
     font-weight: 700;
     font-size: 36px;
     padding-top: 35px;
+}
+
+
+@media screen and (max-width: $tablet) {
+    .partition {
+      display: none;
+    }
 }

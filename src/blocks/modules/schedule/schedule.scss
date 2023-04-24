@@ -52,3 +52,9 @@
 .schedule__column-first {
     text-align: end;
 }
+
+@media screen and (max-width: $tablet) {
+    .schedule {
+      display: none;
+    }
+}

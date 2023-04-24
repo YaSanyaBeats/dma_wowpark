@@ -145,3 +145,9 @@
     margin-top: 0.2rem;
   }
 }
+
+@media screen and (max-width: $tablet) {
+  .tabs {
+    display: none;
+  }
+}

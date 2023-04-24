@@ -38,3 +38,9 @@
     font-weight: 700;
     font-size: 36px;
 }
+
+@media screen and (max-width: $tablet) {
+    .science {
+      display: none;
+    }
+}

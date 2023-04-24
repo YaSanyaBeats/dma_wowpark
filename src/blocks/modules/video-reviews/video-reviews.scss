@@ -42,3 +42,9 @@
     border-radius: 40px;
     min-height: 460px;
 }
+
+@media screen and (max-width: $tablet) {
+    .video-reviews {
+      display: none;
+    }
+}

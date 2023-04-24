@@ -84,3 +84,9 @@
     font-family: var(--main-font-family);
     text-transform: none;
 }
+
+@media screen and (max-width: $tablet) {
+    .birthday {
+      display: none;
+    }
+  }
