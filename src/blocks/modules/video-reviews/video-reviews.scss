@@ -1,0 +1,44 @@
+.video-reviews {
+    background-color: $black;
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+.vidreviews__titile {
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 26px;
+}
+
+.vidreviews__text {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.vidcard_content {
+    padding-top: 25px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.three__class {
+    display: flex;
+    gap: 20px;
+}
+
+.fisrt__vidcard, .second__vidcard, .third__vidcard {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fisrt__vidcard img, .second__vidcard img, .third__vidcard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+    min-height: 460px;
+}

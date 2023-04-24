@@ -1,0 +1,40 @@
+.science__section {
+    padding: 200px 0px;
+}
+
+.science {
+    background-color: $black;
+    position: relative;
+}
+
+.science-yellow {
+    position: absolute;
+    top: -10%;
+    left: -9%;
+}
+
+.science-blue {
+    position: absolute;
+    top: 0;
+    right: -11%;
+}
+
+.science-red {
+    position: absolute;
+    bottom: 0;
+    right: -14%;
+}
+
+.science__section h2, .science__section p {
+    text-align: center;
+}
+
+.science__title {
+    font-size: 64px;
+    padding-bottom: 40px;
+}
+
+.science__text {
+    font-weight: 700;
+    font-size: 36px;
+}
