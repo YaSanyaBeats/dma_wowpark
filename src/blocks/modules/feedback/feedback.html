@@ -1,3 +1,46 @@
 <section class="feedback">
     <!--TODO Section feedback-->
+    <div class="container feedback__section">
+        <div class="feedback__column">
+            <h2 class="feedback__title">МЫ НА СВЯЗИ</h2>
+            <p class="feedback__text"> 
+                Если у вас есть вопросы по билетам, групповым посещениям<br>
+                или вы хотите провести у нас мероприятие — позвоните<br>
+                или напишите нам на почту, в Telegram / Whats App,<br>
+                и мы обсудим, что и как.
+            </p>
+            <p class="feedback__text">
+                Если сейчас это делать неудобно, то оставьте свой контакт<br>
+                в форме справа, и мы сами свяжемся с вами.
+            </p>
+        </div>
+        <div class="feedback__column">
+            <form class="obratnuj-zvonok" autocomplete="off" action="mail.php" method="post">
+                <div class="form-zvonok"> 
+                  <div>
+                    <input maxlength="35" class="in-put" placeholder="Телефон" type="text" name="username" required="">
+                  </div>
+                  <div>
+                    <input maxlength="35" class="in-put" placeholder="Почта" type="text" name="usernameme" required="">
+                  </div>
+                </div>
+                <div class="form-zvonok_second">
+                    <input maxlength="35" class="in-put" placeholder="Ваш вопрос" type="text" name="usernameme" required="">
+                </div>
+                <div class="form-zvonok_third">
+                    <div class="column_button">
+                        <input class="bot-send-mail" type="submit" value="Get a special price!">
+                    </div>
+                    <div class="column_text">
+                        <p class="feedback__text">
+                            Отправляя нам заявку, вы соглашаетесь<br>
+                            на обработку персональных данных.<br>
+                            Мы ни с кем не собираемся делиться ими,<br>
+                            просто должны указать это здесь по закону.
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </section>
