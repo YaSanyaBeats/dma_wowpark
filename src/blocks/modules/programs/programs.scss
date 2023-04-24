@@ -26,7 +26,7 @@
         text-align: center;
         color: $black;
     }
-    &__cards {
+    &__swiper {
         display: flex;
         justify-content: space-between;
         gap: 20px;
@@ -38,7 +38,8 @@
         border-radius: 40px;
 
         padding: 40px;
-        flex: 0 0 25%;
+
+        min-height: 550px;
 
         overflow: hidden;
 
@@ -103,6 +104,97 @@
         font-size: 18px;
         text-align: center;
     }
+    &__dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        bottom: 15px !important;
+        & .swiper-pagination-bullet {
+            background-color: $black !important;
+            padding: 6px;
+            opacity: 1;
+            
+            &-active {
+                background-color: $white !important;
+                padding: 5px;
+                border: 5px solid $black !important;
+            }
+        }
+    }
+    &__prev {
+        bottom: 0;
+        top: unset;
+        width: 50px;
+        height: 50px;
+        background-image: url('../img/icons/slider-nav-left.svg');
+        z-index: 15;
+
+        &::after {
+            content: none;
+        }
+    }
+    &__next {
+        bottom: 0;
+        top: unset;
+        width: 50px;
+        height: 50px;
+        background-image: url('../img/icons/slider-nav-right.svg');
+        z-index: 15;
+
+        &::after {
+            content: none;
+        }
+    }
 }
-.container {
+
+@media screen and (max-width: $tablet) {
+    .programs {
+		&__background-wrapper {}
+		&__container {}
+		&__title {
+            font-size: 32px;
+        }
+		&__swiper {
+            margin-top: 30px;
+        }
+		&__card {
+            min-height: 400px;
+            margin-bottom: 70px;
+            & svg {
+                height: 200px;
+            }
+
+            &:nth-child(4) svg {
+                transform: translate(-10px, -20px) scale(1.4);
+            }
+        }
+		&__card-title {}
+		&__text {}
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .programs {
+		&__background-wrapper {}
+		&__container {}
+		&__title {
+            font-size: 24px;
+        }
+		&__swiper {}
+		&__card {
+            min-height: 450px;
+
+            &:nth-child(4) svg {
+                height: 250px;
+                transform: translate(-10px, -20px) scale(1.7);
+            }
+        }
+		&__card-title {}
+		&__text {}
+		&__navigation {}
+		&__prev {}
+		&__next {}
+		&__dots {}
+    }
 }

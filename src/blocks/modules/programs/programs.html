@@ -4,29 +4,38 @@
     </div>
     <div class="container programs__container">
         <h2 class="programs__title">Программа</h2>
-        <div class="programs__cards">
-            <div class="programs__card">
-                @@include('../../../img/icons/program1.svg')
-                <h3 class="programs__card-title">Более 40 экспонатов</h3>
-                <span class="programs__text">Большая вау-коллекция для неподдельных эмоций. Вы нигде не почувствуете то, что будет c вами в WOW парке.</span>
+        <div class="programs__swiper swiper">
+            <div class="swiper-wrapper">
+                <div class="programs__card swiper-slide">
+                    @@include('../../../img/icons/program1.svg')
+                    <h3 class="programs__card-title">Более 40 экспонатов</h3>
+                    <span class="programs__text">Большая вау-коллекция для неподдельных эмоций. Вы нигде не почувствуете то, что будет c вами в WOW парке.</span>
+                </div>
+                <div class="programs__card swiper-slide">
+                    @@include('../../../img/icons/program2.svg')
+                    <h3 class="programs__card-title">Внимательные гиды</h3>
+                    <span class="programs__text">превратят ваш визит в настоящее шоу c интересными фактами и неожиданными ответами на умные и не очень вопросы. Yt сдерживайте себя!
+                        </span>
+                </div>
+                <div class="programs__card swiper-slide">
+                    @@include('../../../img/icons/program3.svg')
+                    <h3 class="programs__card-title">Весёлая команда</h3>
+                    <span class="programs__text">Кстати, знакомьтесь, это Doppi. Вы ещё ни раз увидите его странное лицо, и надеемся, что полюбите его
+                        </span>
+                </div>
+                <div class="programs__card swiper-slide">
+                    @@include('../../../img/icons/program4.svg')
+                    <h3 class="programs__card-title">А ещё мы очень фотогеничные!</h3>
+                    <span class="programs__text">Делайте вау-фото, снимайте крутые ток-токи, делитесь с миром, собирайте лайки и вопросы “а это где”?</span>
+                </div>
             </div>
-            <div class="programs__card">
-                @@include('../../../img/icons/program2.svg')
-                <h3 class="programs__card-title">Внимательные гиды</h3>
-                <span class="programs__text">превратят ваш визит в настоящее шоу c интересными фактами и неожиданными ответами на умные и не очень вопросы. Yt сдерживайте себя!
-                    </span>
+            <div class="programs__navigation">
+                <div class="swiper-button-prev programs__prev"></div>
+                <div class="swiper-button-next programs__next"></div>
+
+                <div class="swiper-pagination programs__dots"></div>
             </div>
-            <div class="programs__card">
-                @@include('../../../img/icons/program3.svg')
-                <h3 class="programs__card-title">Весёлая команда</h3>
-                <span class="programs__text">Кстати, знакомьтесь, это Doppi. Вы ещё ни раз увидите его странное лицо, и надеемся, что полюбите его
-                    </span>
-            </div>
-            <div class="programs__card">
-                @@include('../../../img/icons/program4.svg')
-                <h3 class="programs__card-title">А ещё мы очень фотогеничные!</h3>
-                <span class="programs__text">Делайте вау-фото, снимайте крутые ток-токи, делитесь с миром, собирайте лайки и вопросы “а это где”?</span>
-            </div>
+            
         </div>
     </div>
 </section>
