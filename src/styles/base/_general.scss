@@ -92,3 +92,13 @@ footer {
     opacity: 1 !important;
     pointer-events: all !important;
 }
+
+@media screen and (max-width: $laptop) {
+    html {
+        zoom: 0.75;
+    }
+}
+
+.fix-font-G {
+    margin-right: -20px;
+}
