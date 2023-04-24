@@ -1,0 +1,54 @@
+.schedule {
+    background-color: $black;
+    padding-bottom: 78px;
+}
+
+.schedule__button {
+    background-color: $orange;
+    color: $white;
+    width: auto;
+}
+
+.schedule__btn {
+    width: auto;
+}
+
+.schedule__column-second {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container.schedule__section {
+    background-color: $yellow;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 140px;
+    position: relative;
+}
+
+.red-schedule {
+    position: absolute;
+    top: 12%;
+    left: 0;
+}
+
+.blue-schedule {
+    position: absolute;
+    top: 7%;
+    right: 0;
+}
+
+.schedule__column-first h2 {
+    color: $black;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.schedule__column-first {
+    text-align: end;
+}
