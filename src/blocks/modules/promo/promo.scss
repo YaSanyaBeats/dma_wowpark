@@ -1,15 +1,16 @@
 .promo {
-    background-image: url(../img/background_pr.png);
-    background-repeat: no-repeat;
+    background: url(../img/background_pr.png) no-repeat 50% 50%;
     background-size: cover;
+
+    margin-top: 100px;
 }
 
-.container.promo-section {
+.promo-section {
     padding-top: 100px;
     padding-bottom: 120px;
 }
 
-.container.promo-section h2 {
+.promo-title {
     text-align: center;
     font-weight: 400;
     font-size: 64px;
@@ -19,9 +20,8 @@
 .promo-cards_column {
     height: auto;
     border-radius: 40px;
-    background-image: url(../img/promo1.jpg);
+    background: url(../img/promo1.jpg) no-repeat 50% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
 }
@@ -46,9 +46,8 @@
 }
 
 .promo-card_first {
-    background-image: url(../img/promo2.jpg);
+    background: url(../img/promo2.jpg) no-repeat 50% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 40px;
     background-position-x: right;
     display: flex;
@@ -57,9 +56,8 @@
 }
 
 .promo-card_second {
-    background-image: url(../img/promo3.png);
+    background: url(../img/promo3.png) no-repeat 50% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 40px;
     background-position-x: center;
     display: flex;
@@ -68,9 +66,8 @@
 }
 
 .promo-card_third {
-    background-image: url(../img/promo4.png);
+    background: url(../img/promo4.png) no-repeat 50% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 40px;
     background-position-x: right;
     display: flex;
@@ -79,14 +76,17 @@
 }
 
 .promo-card_fourth {
-    background-image: url(../img/promo5.jpg);
+    background: url(../img/promo5.jpg) no-repeat 50% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 40px;
     background-position-x: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.promo-card {
+    box-shadow: inset -1000px -1000px rgba(0, 0, 0, 0.3);
 }
 
 .promo-card_cont{
@@ -118,21 +118,92 @@
         }
 }
 
-.promo-card {
+.promo-card_title {
+    font-size: 36px;
+    font-weight: bold;
+}
 
-		&_first {
+.promo-card_text {
+    display: block;
+    margin-top: 15px;
 
+    font-size: 24px;
+}
+
+@media screen and (max-width: $tablet) {
+    .promo {
+    }
+    .promo-title {
+        font-size: 48px;
+    }
+    .container {
+    }
+    .promo-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .promo-cards {
+        flex-direction: column;
+        &_column {
+            width: 100%;
+            height: 500px;
         }
-
-		&_second {
-
+        &_column-sec {
+            width: 100%;
         }
-
-		&_third {
-
+    }
+    .promo-card {
+        &_content {
+            padding: 40px;
         }
+        &_title {}
+        &_text {}
+        &_first {}
+        &_cont {}
+        &_second {}
+        &_third {}
+        &_fourth {}
+    }
+    .fisrtline-cards {
+    }
+    .secondline-cards {
+    }    
+}
 
-		&_fourth {
-
+@media screen and (max-width: $mobile) {
+    .promo {
+    }
+    .container {
+    }
+    .promo-section {
+    }
+    .promo-title {
+        
+    }
+    .promo-cards {
+        &_column {
+            height: 300px;
         }
+        &_column-sec {}
+    }
+    .promo-card {
+        height: 300px;
+        &_content {}
+        &_title {
+            font-size: 24px;
+        }
+        &_text {
+            font-size: 18px;
+        }
+        &_first {}
+        &_cont {}
+        &_second {}
+        &_third {}
+        &_fourth {}
+    }
+    .fisrtline-cards {
+    }
+    .secondline-cards {
+    }
+    
 }
