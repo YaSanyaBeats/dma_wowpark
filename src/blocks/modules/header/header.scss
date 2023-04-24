@@ -11,7 +11,7 @@
         display: flex;
         flex-direction: column;
 
-        padding: 100px 0;
+        padding: 100px 15px;
     }
     &__top {
         display: flex;
@@ -39,7 +39,17 @@
         color: $white;
         text-decoration: none;
     }
-    &__burger {}
+    &__burger {
+        display: none;
+
+        border: 3px solid $white;
+        border-radius: 50px;
+
+        padding: 5px 15px;
+
+        font-size: 32px;
+
+    }
     &__language {
         display: flex;
         flex-direction: column;
@@ -377,10 +387,62 @@
         }
     }
 }
-.container {
-}
-.button {
-    &__text {}
-    &__separator {}
-    &__icon {}
+
+@media screen and (max-width: $tablet) {
+    .header {
+		&_red-worm {}
+		&_yellow-worm {}
+		&_blue-worm {}
+		&__container {}
+		&__top {
+            flex-direction: column-reverse;
+            align-items: stretch;
+        }
+		&__logo {
+            text-align: center;
+        }
+		&__logo-link {}
+		&__menu-wrapper {
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+		&__menu {
+            display: none;
+        }
+		&__menu-list {}
+		&__menu-elem {}
+		&__menu-link {}
+		&__burger {
+            display: block;
+        }
+		&__language {}
+		&__language-elem {
+			&_active {}
+		}
+		&__middle {}
+		&__title {}
+		&__subtitle {}
+		&__text {}
+		&__button-wrapper {}
+		&__button {}
+		&__label {}
+		&__label-text {}
+		&__bottom {}
+		&__social {}
+		&__social-text {}
+		&__social-link {}
+		&__open-video-wrapper {}
+		&__open-video-icon {}
+		&__open-video-text-wrapper {}
+		&__open-video-text {}
+		&__video-wrapper {
+            top: 20px;
+            right: 20px;
+            bottom: 20px;
+            left: 20px;
+        }
+		&__video {}
+		&__worm {}
+		&__bobi {}
+    }
 }
