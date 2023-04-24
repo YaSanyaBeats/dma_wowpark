@@ -1,0 +1,59 @@
+.partition {
+    background-color: $orange;
+}
+
+.cont.partition__section {
+    padding: 250px 0px 360px 0px;
+}
+
+.cont {
+    margin: auto;
+    padding: 0 15px;
+    max-width: 1700px;
+}
+
+.partition__section {
+    position: relative;
+}
+
+.partition-bobi3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.partition-bobi2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.partition-bobi4 {
+    position: absolute;
+    bottom: -0.5%;
+    left: 0;
+}
+
+.partition-bobi5 {
+    position: absolute;
+    top: 86.9%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.partition-bobi1 {
+    position: absolute;
+    bottom: -0.5%;
+    right: 0;
+}
+
+.partition__logo, .partition__text {
+    text-align: center;
+}
+
+.partition__text {
+    font-weight: 700;
+    font-size: 36px;
+    padding-top: 35px;
+}
