@@ -139,3 +139,33 @@ input.in-put:focus-visible {
 .swal2-close {
     position: absolute;
 }
+
+@media screen and (max-width: $mobile) {
+    footer.footer {
+        padding: 30px;
+        margin-bottom: 0;
+    }
+
+    .worm__footer {
+        display: none;
+    }
+
+    .container.footer__section {
+        padding: 70px 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .footer__text {
+        text-align: center;
+    }
+
+    .column__pages, .column__pagesmore {
+        gap: 10px;
+    }
+
+    .firstline, .secondline {
+        justify-content: center;
+    }
+}

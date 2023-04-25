@@ -60,8 +60,49 @@
 }
 
 
-@media screen and (max-width: $tablet) {
-    .partition {
-      display: none;
+@media screen and (max-width: $mobile) {
+    .partition-bobi3 svg, .partition-bobi2 svg, .partition-bobi1 svg, .partition-bobi4 svg {
+      width: 325px;
+      height: 100%;
+    }
+
+    .partition-bobi5 svg {
+        width: 220px;
+        height: 100%;
+    }
+
+    .partition-bobi5 {
+        top: 87.9%;
+    }
+
+    .cont.partition__section {
+        padding: 150px 0px 300px 0px;
+    }
+
+    .partition__logo-link svg {
+        width: 240px;
+        height: 100%;
+    }
+
+    .partition__text {
+        font-weight: 400;
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    .partition-bobi3 {
+        left: -24%;
+    }
+
+    .partition-bobi2 {
+        right: -26%;
+    }
+
+    .partition-bobi4 {
+        left: -36%;
+    }
+
+    .partition-bobi1 {
+        right: -34%;
     }
 }

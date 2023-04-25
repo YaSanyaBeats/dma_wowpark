@@ -85,3 +85,56 @@ section.feedback {
 .column_button .bot-send-mail {
     margin: 0;
 }
+
+@media screen and (max-width: $mobile) {
+    .containerr.feedback__section {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .feedback__column {
+        width: 100%;
+    }
+
+    .feedback__title {
+        text-align: center;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .feedback__text {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .form-zvonok {
+        flex-direction: column;
+    }
+
+    .form-zvonok input {
+        width: 100%;
+    }
+
+    .obratnuj-zvonok {
+        padding: 0 20px;
+    }
+
+    .form-zvonok_second {
+        padding-top: 40px;
+    }
+
+    .form-zvonok_third {
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .feedback__text2 {
+        text-align: center;
+    }
+
+    section.feedback {
+        background-image: url(../img/mobile-bg.png);
+    }
+}

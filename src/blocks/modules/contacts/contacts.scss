@@ -34,3 +34,34 @@ section.contacts {
     font-size: 24px;
     padding-bottom: 10px;
 }
+
+@media screen and (max-width: $mobile){
+    .container.contacts__section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    section.contacts {
+        padding: 30px;
+        margin-bottom: 0;
+    }
+
+    .contacts__columnfr iframe {
+        width: 100%;
+    }
+
+    .contacts__columnsc {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .contacts__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .contacts__text {
+        font-size: 18px;
+        line-height: 125%;
+    }
+}
