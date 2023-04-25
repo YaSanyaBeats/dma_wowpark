@@ -85,8 +85,69 @@
     text-transform: none;
 }
 
-@media screen and (max-width: $tablet) {
+.hochy-sckiky .form-zvonok input {
+    border-bottom: 4px solid white;
+}
+
+.hochy-sckiky .form-zvonok input::placeholder {
+    color: $white;
+}
+
+@media screen and (max-width: $mobile) {
+    .section.happybday{
+        display: flex;
+        padding: 65px 55px 65px 55px;
+        flex-direction: column;
+    }
+
+    .happybday_column-first {
+        width: 100%;
+    }
+
+    .happybday_column-first h2 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .happybday_column-first .header__text {
+        display: block;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 125%;
+    }
+
+    .form-zvonok input {
+        padding: 20px 0px;
+    }
+
+    .form-zvonok {
+        padding: 0;
+    }
+
+    .bot-send-mail {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        width: 100%;
+    }
+
+    .birthday-bobi svg {
+        width: 400px;
+        height: 100%;
+    }
+
+    .birthday-bobi {
+        left: 9%;
+    }
+
+    .happybday_column-second {
+        width: 100%;
+        justify-content: normal;
+        padding-top: 50px;
+    }
+
     .birthday {
-      display: none;
+        background-position-x: -391px;
     }
   }
