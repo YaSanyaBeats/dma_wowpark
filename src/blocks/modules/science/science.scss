@@ -39,8 +39,53 @@
     font-size: 36px;
 }
 
-@media screen and (max-width: $tablet) {
-    .science {
-      display: none;
+@media screen and (max-width: $mobile) {
+    .science-yellow svg {
+        transform: rotate(-30.6deg);
+        width: 360px;
+        height: 100%;
+    }
+
+    .science-yellow {
+        top: -45%;
+        left: -72%;
+    }
+
+    .science-blue svg {
+        transform: rotate(29deg);
+        width: 360px;
+        height: 100%;
+    }
+
+    .science-blue {
+        top: -26%;
+        right: -65%;
+    }
+
+    .science-red svg{
+        width: 620px;
+        height: 100%;
+    }
+
+    .science-red {
+        position: absolute;
+        bottom: -16%;
+        right: -53%;
+    }
+
+    .science__title {
+        font-size: 32px;
+        line-height: 40px;
+        padding: 0px 100px 15px 100px;
+    }
+
+    .science__section {
+        padding: 70px 0;
+    }
+
+    .science__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 125%;
     }
 }

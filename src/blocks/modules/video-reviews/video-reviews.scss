@@ -43,8 +43,44 @@
     min-height: 460px;
 }
 
-@media screen and (max-width: $tablet) {
+@media screen and (max-width: $mobile) {
+    .container.vidreviews__section {
+        padding: 0 40px;
+    }
+
+    .vidreviews__titile {
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        padding-bottom: 7px;
+    }
+
+    .vidreviews__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 125%;
+    }
+
+    .three__class {
+        flex-direction: column;
+    }
+
+    .fisrt__vidcard, .second__vidcard, .third__vidcard {
+        width: 100%;
+    }
+
+    .fisrt__vidcard img, .second__vidcard img, .third__vidcard img {
+        min-height: 255px;
+    }
+
+    .vidcard_content {
+        padding-top: 15px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 125%;
+    }
+
     .video-reviews {
-      display: none;
+        padding-bottom: 30px;
     }
 }
