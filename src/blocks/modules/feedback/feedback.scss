@@ -8,7 +8,13 @@ section.feedback {
     z-index: 2;
 }
 
-.container.feedback__section {
+.containerr {
+    margin: auto;
+    padding: 0 15px;
+    max-width: 1500px;
+}
+
+.containerr.feedback__section {
     display: flex;
     gap: 50px;
 }
@@ -22,8 +28,60 @@ section.feedback {
     font-weight: 400;
     font-size: 55px;
     line-height: 65px;
+    margin-bottom: 40px;
 }
 
-.feedback {
-    display: none;
+.feedback__text {
+    color: $black;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    margin-bottom: 40px;
+}
+
+.form-zvonok_third {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 60px;
+}
+
+.feedback__text2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: $black;
+}
+
+.feedback__column .obratnuj-zvonok .form-zvonok {
+    padding: 0;
+}
+
+.feedback__column .obratnuj-zvonok .form-zvonok .in-put::placeholder{
+    color: $black;
+}
+
+.feedback__column .obratnuj-zvonok .form-zvonok_second .in-put::placeholder{
+    color: $black;
+}
+
+.form-zvonok_second input {
+    width: 100%;
+    padding: 20px 15px;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 4px solid white;
+    transition: 1s;
+    outline: none;
+}
+
+.column_button .bot-send-mail {
+    margin: 0;
 }
