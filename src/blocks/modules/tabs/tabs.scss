@@ -146,8 +146,50 @@
   }
 }
 
-@media screen and (max-width: $tablet) {
-  .tabs {
-    display: none;
-  }
+@media screen and (max-width: $mobile) {
+    .card-display {
+      flex-direction: column;
+    }
+  
+    .card-img, .card-content {
+      width: 100%;
+    }
+
+    .card-content h3 {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    .card-content .header__text {
+      display: block;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 125%;
+    }
+
+    .card-content {
+      padding: 15px 0;
+    }
+
+    .tb-blue, .tb-green, .tb-yellow {
+      display: none;
+    }
+
+    .tabs label {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 125%;
+    }
+
+    .useful h2 {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    .tabs {
+      padding-top: 30px;
+    }
 }
