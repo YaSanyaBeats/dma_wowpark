@@ -192,4 +192,16 @@
     .tabs {
       padding-top: 30px;
     }
+
+    .scnd-lb, .thrd-lb, .fur-lb, .frst-lb {
+      border-radius: 40px;
+    }
+
+    .scnd-tb, .thrd-tb, .fur-tb, .frst-tb {
+      margin-top: -25px;
+    }
+
+    .tabs label {
+      padding-bottom: 20px;
+    }
 }

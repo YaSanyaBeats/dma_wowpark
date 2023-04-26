@@ -94,4 +94,8 @@
     .blue-schedule {
         top: 76%;
     }
+
+    .schedule__column-first, .schedule__column-second {
+        z-index: 9;
+    }
 }
